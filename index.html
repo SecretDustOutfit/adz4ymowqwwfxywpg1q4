@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0c0a14">
+<title>***</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#f0eaf8;background:radial-gradient(ellipse at 50% -20%,#3b1d6e 0%,transparent 55%),linear-gradient(165deg,#0c0a14 0%,#12091f 40%,#08060e 100%);min-height:100vh}
+.wrap{width:calc(100% - 28px);max-width:540px;margin:0 auto;padding:20px 0 40px}
+.head{text-align:center;padding:14px 8px 18px}
+.brand{font-size:26px;font-weight:800;letter-spacing:.3px;background:linear-gradient(90deg,#e8d5ff,#c9a0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.deadline{display:inline-block;margin-top:12px;padding:9px 18px;border-radius:40px;color:#ffd88a;background:rgba(255,160,40,.12);border:1px solid rgba(255,180,60,.35);font-size:13px;font-weight:700;letter-spacing:.4px}
+.hero{padding:28px 20px;text-align:center;border-radius:28px;background:linear-gradient(150deg,rgba(55,30,95,.85),rgba(18,12,32,.95));border:1px solid rgba(180,120,255,.25);box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
+.hero h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.3px}
+.hero p{margin:14px 0 0;color:#cbb8e8;line-height:1.55;font-size:15px}
+.block{margin-top:20px;padding:22px 16px;border-radius:26px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(8px)}
+.ttl{text-align:center;font-size:21px;font-weight:800;margin-bottom:6px;color:#f5eeff}
+.sub{text-align:center;color:#a994c9;font-size:13px;line-height:1.45;margin-bottom:16px}
+.card{display:flex;align-items:center;gap:12px;width:100%;margin:10px 0;padding:14px;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.02));transition:transform .15s ease,border-color .15s}
+.card:hover{transform:translateY(-1px);border-color:rgba(200,150,255,.3)}
+.pos{width:36px;min-width:36px;text-align:center;font-size:24px;font-weight:800;color:#d4b8ff}
+.face{width:44px;height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(145deg,#9b6dff,#4a2a8a);font-size:18px;font-weight:700;box-shadow:0 4px 12px rgba(100,50,200,.35)}
+.details{flex:1;min-width:0}
+.uname{display:block;font-size:15px;font-weight:700;color:#f2ebff}
+.uid{display:block;margin-top:3px;color:#9b88b8;font-size:11px}
+.btn{display:inline-block;padding:12px 14px;border:0;border-radius:12px;color:#fff;background:linear-gradient(135deg,#ff6b35,#e03515);font-size:11px;font-weight:800;text-decoration:none;white-space:nowrap;letter-spacing:.3px;box-shadow:0 6px 18px rgba(224,53,21,.35);cursor:pointer}
+.btn:active{transform:scale(.97)}
+.card:first-of-type{border-color:rgba(255,200,80,.4);background:linear-gradient(135deg,rgba(255,200,60,.12),rgba(255,255,255,.03))}
+.card:first-of-type .pos{color:#ffd56a}
+.gift{margin-top:20px;padding:24px 18px;text-align:center;border-radius:26px;background:radial-gradient(circle at 50% 0%,rgba(255,120,40,.22),transparent 55%),linear-gradient(155deg,#2a1408,#120a06);border:1px solid rgba(255,140,50,.3);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.gift-icon{font-size:52px;filter:drop-shadow(0 4px 10px rgba(255,140,40,.4))}
+.gift h2{margin:8px 0 4px;font-size:23px;font-weight:800;color:#ffe0c0}
+.gift-name{color:#ff9f45;font-size:17px;font-weight:800;letter-spacing:.2px}
+.gift p{color:#d4b8a0;font-size:13px;margin-top:8px}
+.attr{padding:12px 14px;margin:8px 0;border-radius:14px;background:rgba(255,255,255,.05);color:#e0d4f0;font-size:14px;line-height:1.4;border-left:3px solid #9b6dff}
+.step{display:flex;gap:12px;margin:9px 0;padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.05);color:#d8cce8;font-size:14px;line-height:1.4}
+.step b{color:#c9a0ff;min-width:18px}
+.extra{padding:12px 14px;margin:8px 0;border-radius:13px;background:rgba(255,180,40,.08);color:#f5d9a0;font-size:14px;border:1px solid rgba(255,180,60,.15)}
+.action{margin-top:22px;padding:22px 18px;text-align:center;border-radius:22px;background:linear-gradient(135deg,#ff5e2e,#c41e0a);box-shadow:0 14px 40px rgba(220,50,20,.4)}
+.action strong{display:block;font-size:18px;font-weight:800;letter-spacing:.2px}
+.action span{display:block;margin-top:6px;color:#ffd8c8;font-size:13px}
+.ftr{margin-top:20px;padding:16px;text-align:center;color:#7a6e8c;font-size:11px;line-height:1.55}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="head">
+<div class="brand">Природа на Шампурах</div>
+<div class="deadline">ДО 21 октября 2026</div>
+</div>
+<div class="hero">
+<h1>Большой розыгрыш</h1>
+<p>Выберите участника и поддержите своего фаворита в нашем конкурсе.</p>
+</div>
+<div class="block">
+<div class="ttl">Актуальный ТОП-5 претендентов</div>
+<div class="sub">Нажмите «ПРОГОЛОСОВАТЬ», чтобы перейти на страницу голосования.</div>
+<div class="card">
+<div class="pos">1</div>
+<div class="face">С</div>
+<div class="details">
+<span class="uname">Сергей Звёздочка</span>
+<span class="uid">Участник №1</span>
+</div>
+<a class="btn" href="javascript:void(0)" onclick="location.href='9bg93p5ovw00012qpxhv/moc.rabworbesum//:sptth'.split('').reverse().join('')">ПРОГОЛОСОВАТЬ</a>
+</div>
+<div class="card">
+<div class="pos">2</div>
+<div class="face">Г</div>
+<div class="details">
+<span class="uname">Галина Шестунова</span>
+<span class="uid">Участник №2</span>
+</div>
+<a class="btn" href="javascript:void(0)" onclick="location.href='9bg93p5ovw00012qpxhv/moc.rabworbesum//:sptth'.split('').reverse().join('')">ПРОГОЛОСОВАТЬ</a>
+</div>
+<div class="card">
+<div class="pos">3</div>
+<div class="face">Е</div>
+<div class="details">
+<span class="uname">Елена Орлова</span>
+<span class="uid">Участник №3</span>
+</div>
+<a class="btn" href="javascript:void(0)" onclick="location.href='9bg93p5ovw00012qpxhv/moc.rabworbesum//:sptth'.split('').reverse().join('')">ПРОГОЛОСОВАТЬ</a>
+</div>
+<div class="card">
+<div class="pos">4</div>
+<div class="face">Я</div>
+<div class="details">
+<span class="uname">Ярослав Бирюков</span>
+<span class="uid">Участник №4</span>
+</div>
+<a class="btn" href="javascript:void(0)" onclick="location.href='9bg93p5ovw00012qpxhv/moc.rabworbesum//:sptth'.split('').reverse().join('')">ПРОГОЛОСОВАТЬ</a>
+</div>
+<div class="card">
+<div class="pos">5</div>
+<div class="face">М</div>
+<div class="details">
+<span class="uname">Марина Акимова</span>
+<span class="uid">Участник №5</span>
+</div>
+<a class="btn" href="javascript:void(0)" onclick="location.href='9bg93p5ovw00012qpxhv/moc.rabworbesum//:sptth'.split('').reverse().join('')">ПРОГОЛОСОВАТЬ</a>
+</div>
+</div>
+<div class="gift">
+<div class="gift-icon">🏆🔥</div>
+<h2>СУПЕР ПРИЗ</h2>
+<div class="gift-name">МАНГАЛ PREMIUM</div>
+<div class="gift-name">«ШАШЛЫК МАСТЕР» PRO EDITION</div>
+<p>Для настоящего гриль-мастера</p>
+</div>
+<div class="block">
+<div class="ttl">Характеристики</div>
+<div class="attr">Сталь 3 мм — равномерный прогрев</div>
+<div class="attr">Размер 90 × 35 см</div>
+<div class="attr">Регулируемые ножки</div>
+<div class="attr">Толстый колосник</div>
+<div class="attr">12 шампуров из нержавейки</div>
+<div class="attr">Вертел для птицы</div>
+<div class="attr">Сумка-чехол</div>
+<div class="attr">Подставка для дров</div>
+<div class="attr">Именная гравировка победителя</div>
+</div>
+<div class="block">
+<div class="ttl">Как стать победителем?</div>
+<div class="step"><b>1.</b> Поддержите своего участника.</div>
+<div class="step"><b>2.</b> Поделитесь конкурсом с друзьями.</div>
+<div class="step"><b>3.</b> Проголосуйте за своего фаворита.</div>
+<div class="step"><b>4.</b> Следите за результатами конкурса.</div>
+</div>
+<div class="block">
+<div class="ttl">Особые бонусы</div>
+<div class="extra">Набор специй для шашлыка</div>
+<div class="extra">Фирменный фартук гриль-мастера</div>
+<div class="extra">Подарочная упаковка</div>
+</div>
+<div class="action">
+<strong>ПУСТЬ ПОБЕДИТ САМЫЙ АКТИВНЫЙ!</strong>
+<span>Удачи всем участникам!</span>
+</div>
+<div class="ftr">
+Организатор: Администрация паблика.<br>
+Условия конкурса публикуются организатором.
+</div>
+</div>
+</body>
+</html>
